@@ -6,12 +6,12 @@
 Summary:	Java binding to the libvirt library
 Summary(pl.UTF-8):	Wiązanie Javy do biblioteki libvirt
 Name:		java-libvirt
-Version:	0.4.7
+Version:	0.4.8
 Release:	1
 License:	LGPL v2.1
 Group:		Libraries/Java
 Source0:	ftp://libvirt.org/libvirt/java/libvirt-java-%{version}.tar.gz
-# Source0-md5:	47d2558a1d2783fb88595a081889e01a
+# Source0-md5:	714e1f754ecedbdcda947568711fb5f2
 URL:		http://libvirt.org/
 BuildRequires:	jdk
 BuildRequires:	jpackage-utils
