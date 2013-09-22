@@ -6,19 +6,21 @@
 Summary:	Java binding to the libvirt library
 Summary(pl.UTF-8):	Wiązanie Javy do biblioteki libvirt
 Name:		java-libvirt
-Version:	0.4.9
+Version:	0.5.0
 Release:	1
 License:	MIT
 Group:		Libraries/Java
 Source0:	ftp://libvirt.org/libvirt/java/libvirt-java-%{version}.tar.gz
-# Source0-md5:	0a2a4420c38b950f33cdae93ff0e79a8
+# Source0-md5:	f21edfef3af8c31bfb01edcab00f7d7d
 URL:		http://libvirt.org/
+BuildRequires:	java-jna >= 3.3
 BuildRequires:	jdk
 BuildRequires:	jpackage-utils
 BuildRequires:	libvirt-devel >= 0.8.2
 BuildRequires:	rpm >= 4.4.9-56
 BuildRequires:	rpm-javaprov
 BuildRequires:	rpmbuild(macros) >= 1.300
+Requires:	java-jna >= 3.3
 Requires:	jpackage-utils
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -47,7 +49,7 @@ Dokumentacja do wiązań java-libvirt.
 %build
 export JAVA_HOME="%{java_home}"
 
-%ant build %{?with_javadoc:docs}
+%ant build jar %{?with_javadoc:docs}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -70,7 +72,7 @@ ln -nfs libvirt-%{version} %{_javadocdir}/libvirt
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog LICENCE NEWS README
+%doc AUTHORS ChangeLog LICENSE NEWS README
 %{_javadir}/libvirt-%{version}.jar
 %{_javadir}/libvirt.jar
 
