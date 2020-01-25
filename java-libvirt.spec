@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	javadoc		# don't build javadoc
 #
-%include	/usr/lib/rpm/macros.java
 Summary:	Java binding to the libvirt library
 Summary(pl.UTF-8):	Wiązanie Javy do biblioteki libvirt
 Name:		java-libvirt
