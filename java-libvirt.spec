@@ -5,20 +5,20 @@
 Summary:	Java binding to the libvirt library
 Summary(pl.UTF-8):	Wiązanie Javy do biblioteki libvirt
 Name:		java-libvirt
-Version:	0.5.1
+Version:	0.5.2
 Release:	1
 License:	MIT
 Group:		Libraries/Java
-Source0:	ftp://libvirt.org/libvirt/java/libvirt-java-%{version}.tar.gz
-# Source0-md5:	e7d92f3cded9c2dde0a3872b72d356c5
-URL:		http://libvirt.org/
+Source0:	https://libvirt.org/sources/java/libvirt-java-%{version}.tar.gz
+# Source0-md5:	c582d8b6792ac13c8a29338a04934c1c
+URL:		https://libvirt.org/
 BuildRequires:	java-jna >= 3.3
 BuildRequires:	jdk
 BuildRequires:	jpackage-utils
 BuildRequires:	libvirt-devel >= 0.8.2
 BuildRequires:	rpm >= 4.4.9-56
 BuildRequires:	rpm-javaprov
-BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	rpmbuild(macros) >= 1.745
 Requires:	java-jna >= 3.3
 Requires:	jpackage-utils
 BuildArch:	noarch
