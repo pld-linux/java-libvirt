@@ -1,16 +1,16 @@
 #
 # Conditional build:
-%bcond_without	javadoc		# don't build javadoc
+%bcond_without	javadoc		# javadoc API documentation
 #
 Summary:	Java binding to the libvirt library
 Summary(pl.UTF-8):	Wiązanie Javy do biblioteki libvirt
 Name:		java-libvirt
-Version:	0.5.2
+Version:	0.5.3
 Release:	1
 License:	MIT
 Group:		Libraries/Java
-Source0:	https://libvirt.org/sources/java/libvirt-java-%{version}.tar.gz
-# Source0-md5:	c582d8b6792ac13c8a29338a04934c1c
+Source0:	https://download.libvirt.org/java/libvirt-java-%{version}.tar.gz
+# Source0-md5:	2a96d4508ad5c600cb877e1d7a8efae1
 URL:		https://libvirt.org/
 BuildRequires:	java-jna >= 3.3
 BuildRequires:	jdk
